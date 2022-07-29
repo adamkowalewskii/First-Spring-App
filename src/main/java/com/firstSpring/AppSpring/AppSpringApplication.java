@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 
 @SpringBootApplication
-public class AppSpringApplication implements CommandLineRunner {
+public class AppSpringApplication{
 
 	private static Logger LOG = (Logger) LoggerFactory
 			.getLogger(AppSpringApplication.class);
@@ -21,13 +21,5 @@ public class AppSpringApplication implements CommandLineRunner {
 		LOG.info("ENDINGING THE APPLICATION");
 	}
 
-	@Override
-	public void run(String... args) {
-		LOG.info("EXECUTING : command line runner");
-		Scanner scanner = new Scanner(System.in);
-		String tmp = scanner.next();
 
-		LOG.info(tmp);
-
-	}
 }
